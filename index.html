@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather App</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="weatherForm">
+		<select name="WeatherStn" id="WeatherStn">
+			<option value="Choose one" selected disabled>Choose one</option>
+			<option value="Banyan Road">Banyan Road</option>
+			<option value="Clementi Road">Clementi Road</option>
+			<option value="Kim Chuan Road">Kim Chuan Road</option>
+			<option value="Nanyang Avenue">Nanyang Avenue</option>
+			<option value="Scotts Road">Scotts Road</option>
+			<option value="Tuas South Avenue 3">Tuas South Avenue 3</option>
+			<option value="Sentosa">Sentosa</option>
+			<option value="Upper Changi Road North">Upper Changi Road North</option>
+			<option value="West Coast Highway">West Coast Highway</option>
+			<option value="Woodlands Avenue 9">Woodlands Avenue 9</option>
+			<option value="Ang Mo Kio Avenue 5">Ang Mo Kio Avenue 5</option>
+			<option value="Old Chua Chu Kang Road">Old Chua Chu Kang Road</option>
+			<option value="East Coast Parkway">East Coast Parkway</option>
+		</select>
+
+		<button id="submit" onclick="displayWeather()">Submit</button>
+	</div>
+	<div class="card" style="display:none">
+		<h1 id="road"></h1>
+		<p id="temp"></p>
+		<p id="error"></p>
+	</div>
+
+
+	<script src="index.js"></script>
+</body>
+</html>
